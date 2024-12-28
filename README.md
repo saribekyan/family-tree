@@ -11,3 +11,7 @@ Make sure to specify the correct input CSV file in the `script.js` file.
 
 Input data should be formatted like the [test file](data/family_test.csv).
 Easiest is to write it down in Excel and convert to this format.
+
+## Credits
+
+99% of the code is GPT o1 generated.
