@@ -15,3 +15,8 @@ Easiest is to write it down in Excel and convert to this format.
 ## Credits
 
 99% of the code is GPT o1 generated.
+
+## TODOs
+
+* Show a list of CSVs and visualize the ones selected.
+    This allows the user to create CSVs for each family branch separately and combine as needed.
