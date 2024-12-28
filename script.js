@@ -112,13 +112,10 @@
           tooltip
             .style('display','block')
             .html(`
-              <b>${p.Name}</b><br>
-              Birth: ${p.Birth || 'N/A'}<br>
-              Death: ${p.Death || 'N/A'}<br>
-              Gender: ${p.Gender || 'N/A'}<br>
-              <hr>
-              ${p.Metadata || ''}
-            `);
+            <b>${p.Name || '?'}</b><br>
+            ${p.Birth || '?'} - ${p.Death || '?'}<br>
+            ${p.Metadata ? `<hr>${p.Metadata}` : ''}
+            `);          
         }
       })
       .on('mousemove', event => {
