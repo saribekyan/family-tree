@@ -1,0 +1,61 @@
+/* style.css */
+
+/* Basic reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 6px 8px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 0.9em;
+  max-width: 300px;
+  display: none; 
+}
+
+/* Default dagre-d3 classes */
+.node rect {
+  stroke: #333;
+  stroke-width: 1.5px;
+  rx: 10;
+  ry: 10;
+}
+.edgePath path {
+  stroke: #555;
+  stroke-width: 1.5px;
+  fill: none; /* no arrowheads */
+}
+
+/* Men => light blue, Women => yellow */
+.node.person-man rect {
+  fill: lightblue;
+}
+.node.person-woman rect {
+  fill: yellow;
+}
+.node.person-na rect {
+  fill: grey;
+}
+
+/* Minimal / invisible marriage node */
+.node.marriage-minimal rect {
+  fill: #000;    /* no fill */
+  stroke: none;  /* no border */
+  width: 10px;    /* tiny rect if you want a small dot */
+  height: 10px;
+  rx: 3px; ry: 3px;
+}
+
+/* Subgraph (cluster) styling for couples,
+   so you can see a dashed box around them or hide it. */
+.cluster.couple-cluster rect {
+  fill: none !important;
+  stroke: #999 !important;
+  stroke-dasharray: 4,2;
+}

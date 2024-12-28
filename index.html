@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Family Tree</title>
+
+  <!-- D3 + dagre-d3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/dagre-d3@0.6.4/dist/dagre-d3.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SVG fills the browser; we give it a large viewBox to hold big trees -->
+  <svg id="svg-dagre"
+       width="100%" height="100%"
+       viewBox="0 0 2000 2000"
+       preserveAspectRatio="xMinYMin meet">
+    <!-- We'll render the graph inside this <g> -->
+    <g></g>
+  </svg>
+
+  <!-- Tooltip (optional) -->
+  <div id="tooltip" class="tooltip"></div>
+
+  <!-- Scripts -->
+  <script src="marriage-builder.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
