@@ -113,7 +113,7 @@
             .style('display','block')
             .html(`
             <b>${p.Name || '?'}</b><br>
-            ${p.Birth || '?'} - ${p.Death || '?'}<br>
+            ${p.Birth || ''} - ${p.Death || ''}<br>
             ${p.Metadata ? `<hr>${p.Metadata}` : ''}
             `);          
         }

@@ -7,6 +7,9 @@ python -m http.server 8000
 
 Make sure to specify the correct input CSV file in the `script.js` file.
 
+The result looks like this:
+![image](data/test_result.png)
+
 ## Input data
 
 Input data should be formatted like the [test file](data/family_test.csv).
